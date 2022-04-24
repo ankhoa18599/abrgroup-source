@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="/styles/styles.css" />
+
+  <title>ABRGroup</title>
+</head>
+
+<body>
+  <nav class=" mx-auto py-3 bg-white position-sticky" style="top: 0; left: 0; z-index: 100;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <img src="/assets/abrgroup.png" width="80" height="80" alt="Logo abrgroup"  />
+        </div>
+        <div class="col-md-8">
+          <div class="d-flex align-items-center justify-content-between h-100 font-weight-bold menu">
+            <a href="#" class="">Trang chủ</a>
+            <span href="#what-is-microplastics" class="" onclick="goToPackage(`what-is-microplastics`)">Vi nhựa là gì</span>
+            <span href="#origin-of-microplastics" class="" onclick="goToPackage(`origin-of-microplastics`)">Nguồn gốc</span>
+            <span href="#effect-of-microplastics" class="" onclick="goToPackage(`effect-of-microplastics`)">Ảnh hưởng</span>
+            <span href="#solution" class="" onclick="goToPackage(`solution`)">Biện pháp</span>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </nav>
+  <section id="banner" class="container">
+    <div class="row">
+      <div class="col-lg-6 mb-2 mb-lg-0">
+        <h3 class="mb-3">Thông điệp vi nhựa</h3>
+        <h1>Từ chối - Tiết giảm - Tái sử dụng -Tái chế</h1>
+        <div class="text-center text-lg-left"><a class="d-inline-block">LIÊN HỆ VỚI CHÚNG TÔI</a></div>
+      </div>
+      <div class="col-lg-6 mt-4 mt-lg-0 ">
+        <img src="/assets/banner.png" width="510" height="292" alt="banner image" />
+      </div>
+    </div>
+  </section>
+  <section id="what-is-microplastics" class="container">
+    <div class="text-center">
+      <h2 class="font-weight-bold mb-4">VI NHỰA LÀ GÌ?</h2>
+      <p class="mx-auto">
+        Vi nhựa (microplastic) là những mảnh nhựa nhỏ được tìm thấy trong môi
+        trường. Chúng được định nghĩa là các hạt nhựa có đường kính nhỏ hơn
+        5mm.
+      </p>
+      <img class="big-image" src="/assets/what-is-microplastics.png" width="864" height="486" alt="VI NHỰA LÀ GÌ" />
+      <h4 class="text-left">Có 5 hình dạng vi nhựa được ghi nhận là:</h4>
+      <div class="row justify-content-center d-none d-lg-flex">
+        <div class="col-md-4 card-wrapper">
+          <div class="card-microplastics">
+            <img src="/assets/what-is-microplastics/img-1.png" width="285" height="285" alt="Dạng mảnh (Fragment)" />
+            <p>Dạng mảnh (Fragment)</p>
+          </div>
+        </div>
+        <div class="col-md-4 card-wrapper">
+          <div class="card-microplastics">
+            <img src="/assets/what-is-microplastics/img-3.png" width="285" height="285" alt="Dạng sợi (Fibers)" />
+            <p>Dạng sợi (Fibers)</p>
+          </div>
+        </div>
+        <div class="col-md-4 card-wrapper">
+          <div class="card-microplastics">
+            <img src="/assets/what-is-microplastics/img-4.png" width="285" height="285" alt="Dạng viên (Pellets)" />
+            <p>Dạng viên (Pellets)</p>
+          </div>
+        </div>
+        <div class="col-md-4 card-wrapper">
+          <div class="card-microplastics">
+            <img src="/assets/what-is-microplastics/img.png" width="285" height="285" alt="Dạng xốp (Foam)" />
+            <p>Dạng xốp (Foam)</p>
+          </div>
+        </div>
+        <div class="col-md-4 card-wrapper">
+          <div class="card-microplastics">
+            <img src="/assets/what-is-microplastics/img-2.png" width="285" height="285" alt="Dạng phim (films)" />
+            <p>Dạng phim (films)</p>
+          </div>
+        </div>
+      </div>
+      <div class="d-block d-lg-none">
+        <div class="swiper p-4">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide card-wrapper">
+          <div class="card-microplastics">
+            <img src="/assets/what-is-microplastics/img-1.png" width="285" height="285" alt="Dạng mảnh (Fragment)" />
+            <p>Dạng mảnh (Fragment)</p>
+          </div>
+        </div>
+        <div class="swiper-slide card-wrapper">
+          <div class="card-microplastics">
+            <img src="/assets/what-is-microplastics/img-3.png" width="285" height="285" alt="Dạng sợi (Fibers)" />
+            <p>Dạng sợi (Fibers)</p>
+          </div>
+        </div>
+        <div class="swiper-slide card-wrapper">
+          <div class="card-microplastics">
+            <img src="/assets/what-is-microplastics/img-4.png" width="285" height="285" alt="Dạng viên (Pellets)" />
+            <p>Dạng viên (Pellets)</p>
+          </div>
+        </div>
+        <div class="swiper-slide card-wrapper">
+          <div class="card-microplastics">
+            <img src="/assets/what-is-microplastics/img.png" width="285" height="285" alt="Dạng xốp (Foam)" />
+            <p>Dạng xốp (Foam)</p>
+          </div>
+        </div>
+        <div class="swiper-slide card-wrapper">
+          <div class="card-microplastics">
+            <img src="/assets/what-is-microplastics/img-2.png" width="285" height="285" alt="Dạng phim (films)" />
+            <p>Dạng phim (films)</p>
+          </div>
+        </div>
+        </div>
+        <div class="swiper-pagination position-relative"></div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="origin-of-microplastics" class="container mx-auto">
+    <h2 class="text-center">NGUỒN GỐC VI NHỰA</h2>
+    <p>
+      Vi nhựa có nguồn gốc từ các loại chất thải nhựa do con người thải ra môi
+      trường, theo đó, vi nhựa có thể có 3 nhóm xuất xứ:
+    </p>
+    <h4>1. Vi nhựa sơ cấp (nguyên phát):</h4>
+    <p>
+      Là nhựa được chú ý thiết kế với kích thước rất nhỏ gọi là microbeads, có
+      nhiều trong các sản phẩm sức khỏe và làm đẹp như kem đánh răng, bột
+      giặt, mỹ phẩm,...
+    </p>
+    <h4>2. Vi nhựa thứ cấp (thứ phát):</h4>
+    <p>
+      Là những mảnh nhựa rất nhỏ sản sinh từ sự phân hủy của các mảnh vụn nhựa
+      lớn hơn, do các tác nhân vật lý, sinh học và hóa học gây ra.
+    </p>
+    <h4>3. Vi nhựa từ các nguồn khác:</h4>
+    <p>
+      Là những mảnh nhựa có trong rác thải phụ phẩm, bụi trong quá trình hao
+      mòn của hai loại vi nhựa sơ cấp và thứ cấp như sợi vi nhựa khi giặt quần
+      áo, đồ chơi bằng nhựa, vi nhựa cao su do lốp xe hao mòn…
+    </p>
+    <p>
+      Ví dụ như: lốp xe (tyres), dệt tổng hợp (synthetic textiles), bụi thành
+      phố (city dust), vạch kẻ đường (road markings), rác thải sinh hoạt
+      (domestic waste), lớp phủ ngành hàng hải (marine coatings), sản phẩm
+      chăm sóc cá nhân (personal care products),...
+    </p>
+    <div class="row">
+      <div class="col-3">
+        <img src="assets/origin-of-microplastics/frame-1.png" width="190" height="190" alt="Nguồn Vi nhựa khác" />
+      </div>
+      <div class="col-3">
+        <img src="assets/origin-of-microplastics/frame-3.png" width="190" height="190" alt="Nguồn Vi nhựa khác" />
+      </div>
+      <div class="col-3">
+        <img src="assets/origin-of-microplastics/frame-5.png" width="190" height="190" alt="Nguồn Vi nhựa khác" />
+      </div>
+      <div class="col-3">
+        <img src="assets/origin-of-microplastics/frame-7.png" width="190" height="190" alt="Nguồn Vi nhựa khác" />
+      </div>
+      <div class="col-3">
+        <img src="assets/origin-of-microplastics/frame-2.png" width="190" height="190" alt="Nguồn Vi nhựa khác" />
+      </div>
+
+      <div class="col-3">
+        <img src="assets/origin-of-microplastics/frame-4.png" width="190" height="190" alt="Nguồn Vi nhựa khác" />
+      </div>
+
+      <div class="col-3">
+        <img src="assets/origin-of-microplastics/frame-6.png" width="190" height="190" alt="Nguồn Vi nhựa khác" />
+      </div>
+    </div>
+  </section>
+  <section id="effect-of-microplastics">
+    <div class="content">
+      <div class="container text-center">
+      <h2>ẢNH HƯỞNG CỦA VI NHỰA</h2>
+      <div class="row text-left ">
+        <div class="d-flex flex-column-reverse flex-md-row">
+        <div class="col-md-5 mb-3 mb-lg-0">
+          <h4 class="mb-4">Ảnh hưởng vi nhựa tới hệ sinh thái</h4>
+          <p class="mb-0 text-white">
+            Gây ô nhiễm nguồn đất canh tác, nguồn nước và không khí. Có hại
+            cho thực vật, động vật ăn nuốt phải gây tắc nghẽn hoặc gây chết.
+          </p>
+        </div>
+        <div class="col-md-7 mb-4">
+          <img src="/assets/effect/effect-1.png" width="598" height="336" alt="Ảnh hưởng vi nhựa tới hệ sinh thái" />
+        </div>
+        </div>
+        <div class="d-flex flex-column-reverse flex-md-row my-4">
+        <div class="col-md-5 ">
+          <h4 class=" mb-3  mb-lg-0">Ảnh hưởng vi nhựa tới sức khoẻ con người</h4>
+          <p class="mb-0 text-white">
+            Vi nhựa có trong bụi đường hô hấp khi con người hít thở vào. Vì vi
+            nhựa có đường kính trên 10 micromet nên thường được hệ thống chất
+            nhầy, lông mao đường hô hấp trên bắt giữ và loại trừ ra qua hắt
+            hơi, ho, xì mũi, khạc đờm nhầy… Nếu vi nhựa có kích thước nhỏ hơn,
+            chúng sẽ tiến sâu hơn và mắc kẹt vào các phế nang, khó bị đào
+            thải. Vi nhựa cũng có thể vào cơ thể con người qua con đường uống
+            nước đóng chai hoặc ăn các thực phẩm bị ô nhiễm vi nhựa.
+          </p>
+        </div>
+        <div class="col-md-7 mb-4">
+          <img src="/assets/effect/effect-2.png" width="598" height="336"
+            alt="Ảnh hưởng vi nhựa tới sức khoẻ con người" />
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section id="solution" class="container">
+    <h2 class="mb-40 text-center">BIỆN PHÁP</h2>
+    <div class="row">
+      <div class="col-md-4 card-solution">
+        <div class="text-center px-4">
+          <img src="/assets/solution/frame.png" width="80" height="80" class="mb-4" />
+          <p>Nói không với nhựa sử dụng 1 lần</p>
+        </div>
+      </div>
+      <div class="col-md-4 card-solution">
+        <div class="text-center px-4">
+          <img src="/assets/solution/frame-1.png" width="80" height="80" class="mb-4" />
+          <p>Hạn chế sử dụng bao bì dùng một lần</p>
+        </div>
+      </div>
+      <div class="col-md-4 card-solution">
+        <div class="text-center px-4">
+          <img src="/assets/solution/frame-3.png" width="80" height="80" class="mb-4" />
+          <p>Mua quần áo có chất liệu thân thiện với môi trường</p>
+        </div>
+      </div>
+      <div class="col-md-4 card-solution">
+        <div class="text-center px-4">
+          <img src="/assets/solution/frame-6.png" width="80" height="80" class="mb-4" />
+          <p>
+            Phơi khô quần áo, hạn chế sử dụng máy sấy quần áo vì các loại vải
+            tổng hợp sẽ rơi ra vải nhỏ
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 card-solution">
+        <div class="text-center px-4">
+          <img src="/assets/solution/frame-2.png" width="80" height="80" class="mb-4" />
+          <p>
+            Sử dụng các sản phẩm thân thiện với môi trường: túi vải, ống hút
+            bằng tre…
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 card-solution">
+        <div class="text-center px-4">
+          <img src="/assets/solution/frame-5.png" width="80" height="80" class="mb-4" />
+          <p>Hãy lựa chọn thông minh hơn tại gia đình</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="story" class="container">
+    <h2 class="text-center ">CÂU CHUYỆN - VI NHỰA KẺ HUỶ DIỆT</h2>
+    <div class="row">
+      <div class="py-4 col-md-5 mb-0 mb-lg-3">
+        <img class="" src="/assets/story/strory-1.png" width="421" height="236" />
+      </div>
+      <div class="col-md-7">
+        <div class="p-0 p-lg-4">
+          <h4 class="mb-4">
+            Bạn có thể nạp vào cơ thể 5gr mỗi tuần từ việc uống nước
+          </h4>
+          <p class="mb-0">
+            Có thể bạn chưa biết ( có thể bạn đã biết): ước tính trung bình
+            mỗi người ăn phải khoảng 5g nhựa mỗi tuần, tương đương với một
+            chiếc thẻ tín dụng ( theo nghiên cứu từ Đại học New Castle, Úc năm
+            2018)
+          </p>
+        </div>
+      </div>
+      <div class="d-flex flex-column-reverse flex-md-row">
+      <div class="col-md-7">
+        <div class="p-0 p-lg-4">
+          <h4 class="mb-4">
+            Hạt vi nhựa nguy hiểm như thế nào đối với con người?
+          </h4>
+          <p class="mb-0">
+            Đáng quan ngại đó là vi hạt nhựa (VHN) hiện diện trong nhiều sản
+            phẩm mà con người sử dụng hàng ngày như kem đánh răng, sữa rửa
+            mặt, kem cạo râu, sữa tắm…
+          </p>
+        </div>
+      </div>
+     <div class="py-4 col-md-5 mb-0 mb-lg-3">
+        <img class="" src="/assets/story/strory-2.png" width="421" height="236" />
+      </div>
+      </div>
+      <div class="py-4 col-md-3">
+        <img class="" src="/assets/story/strory-3.png" width="421" height="236" />
+      </div>
+      <div class="col-md-7">
+         <div class="p-0 p-lg-4">
+          <h4 class="mb-4">Hạt vi nhựa "Kẻ giết người" thầm lặng</h4>
+          <p class="mb-0">
+            Với lượng lớn hạt vi nhựa được thải ra môi trường hàng ngày và
+            được hấp thụ vào cơ thể người thông qua đường ăn uống, hít thở,
+            đây là nguy cơ vô cùng lớn đối với sức khỏe con người và hệ sinh
+            thái
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="video" class="container">
+    <div class="text-center">
+      <iframe width="939" height="508" src="https://www.youtube.com/embed/m-L4t6nHHDc" title="Vi nhựa là gì?"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </section>
+  <section id="team" class="container">
+    <h2 class="text-center mb-40">ĐỘI NGŨ PHÁT TRIỂN</h2>
+    <div class="position-relative">
+      <div class="swiper p-4">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide h-auto">
+            <div class="p-4 card-member">
+              <img src="/assets/team/1.png" width="180" height="180" alt="TS. Trịnh Đăng Mậu" class="w-auto mb-3" />
+              <h5 class="mb-3">TS. Trịnh Đăng Mậu</h5>
+              <div class="d-flex mb-2">
+                <img src="/assets/mail.svg" width="24" height="24" class="w-auto mr-2" />
+                <span>trinhdangmau@gmail.com</span>
+              </div>
+              <div class="d-flex">
+                <img src="/assets/phone.svg" width="24" height="24" class="w-auto mr-2" />
+                <span class="mb-2">0948785483</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide h-auto">
+            <div class="p-4 card-member">
+              <img src="/assets/team/2.png" width="180" height="180" alt="PGS.TS Võ Văn Minh" class="w-auto mb-3" />
+              <h5 class="mb-3">PGS.TS Võ Văn Minh</h5>
+              <div class="d-flex mb-2">
+                <img src="/assets/mail.svg" width="24" height="24" class="w-auto mr-2" />
+                <span>vominhdu@ued.udn.vn</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide h-auto">
+            <div class="p-4 card-member">
+              <img src="/assets/team/3.png" width="180" height="180" alt="TS. Trần Nguyễn Quỳnh Anh"
+                class="w-auto mb-3" />
+              <h5 class="mb-3">TS. Trần Nguyễn Quỳnh Anh</h5>
+              <div class="d-flex mb-2">
+                <img src="/assets/mail.svg" width="24" height="24" class="w-auto mr-2" />
+                <span>trinhdangmau@gmail.com</span>
+              </div>
+              <div class="d-flex">
+                <img src="/assets/phone.svg" width="24" height="24" class="w-auto mr-2" />
+                <span class="mb-2">0948785483</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide h-auto">
+            <div class="p-4 card-member">
+              <img src="/assets/team/4.png" width="180" height="180" alt="Th.S Lê Thị Mai" class="w-auto mb-3" />
+              <h5 class="mb-3">Th.S Lê Thị Mai</h5>
+              <div class="d-flex mb-2">
+                <img src="/assets/mail.svg" width="24" height="24" class="w-auto mr-2" />
+                <span>mailedn610@gmail.com</span>
+              </div>
+              <div class="d-flex">
+                <img src="/assets/phone.svg" width="24" height="24" class="w-auto mr-2" />
+                <span class="mb-2">0914296157</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide h-auto">
+            <div class="p-4 card-member">
+              <img src="/assets/team/5.png" width="180" height="180" alt="Cử nhân Phan Thị Thảo Linh"
+                class="w-auto mb-3" />
+              <h5 class="mb-3">Cử nhân Phan Thị Thảo Linh</h5>
+              <div class="d-flex mb-2">
+                <img src="/assets/mail.svg" width="24" height="24" class="w-auto mr-2" />
+                <span>Dolathaolinh@gmail.com</span>
+              </div>
+              <div class="d-flex">
+                <img src="/assets/phone.svg" width="24" height="24" class="w-auto mr-2" />
+                <span class="mb-2">0397330770</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide h-auto">
+            <div class="p-4 card-member">
+              <img src="/assets/team/6.png" width="180" height="180" alt="Giáo dục Tiểu học - Nguyễn Thị Trang Nhung"
+                class="w-auto mb-3" />
+              <h5 class="mb-3">Giáo dục Tiểu học - Nguyễn Thị Trang Nhung</h5>
+              <div class="d-flex mb-2">
+                <img src="/assets/mail.svg" width="24" height="24" class="w-auto mr-2" />
+                <span>trangnhung15102k1@gmail.com</span>
+              </div>
+              <div class="d-flex">
+                <img src="/assets/phone.svg" width="24" height="24" class="w-auto mr-2" />
+                <span class="mb-2">0345051238</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide h-auto">
+            <div class="p-4 card-member">
+              <img src="/assets/team/7.png" width="180" height="180" alt="Giáo dục Tiểu học - Tống Thùy Dung"
+                class="w-auto mb-3" />
+              <h5 class="mb-3">Giáo dục Tiểu học - Tống Thùy Dung</h5>
+              <div class="d-flex mb-2">
+                <img src="/assets/mail.svg" width="24" height="24" class="w-auto mr-2" />
+                <span>thuydung230@gmail.com</span>
+              </div>
+              <div class="d-flex">
+                <img src="/assets/phone.svg" width="24" height="24" class="w-auto mr-2" />
+                <span class="mb-2">0779510993</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide h-auto">
+            <div class="p-4 card-member">
+              <img src="/assets/team/8.png" width="180" height="180" alt="Giáo dục Tiểu học - Dương Thị Vòng"
+                class="w-auto mb-3" />
+              <h5 class="mb-3">Giáo dục Tiểu học - Dương Thị Vòng</h5>
+              <div class="d-flex mb-2">
+                <img src="/assets/mail.svg" width="24" height="24" class="w-auto mr-2" />
+                <span>duongvong18@gmail.com</span>
+              </div>
+              <div class="d-flex">
+                <img src="/assets/phone.svg" width="24" height="24" class="w-auto mr-2" />
+                <span class="mb-2">0979859038</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide h-auto">
+            <div class="p-4 card-member">
+              <img src="/assets/team/9.png" width="180" height="180" alt="Giáo dục Tiểu học - Trần Thị Bích Anh"
+                class="w-auto mb-3" />
+              <h5 class="mb-3">Giáo dục Tiểu học - Trần Thị Bích Anh</h5>
+              <div class="d-flex mb-2">
+                <img src="/assets/mail.svg" width="24" height="24" class="w-auto mr-2" />
+                <span>bichanh123123@gmail.com</span>
+              </div>
+              <div class="d-flex">
+                <img src="/assets/phone.svg" width="24" height="24" class="w-auto mr-2" />
+                <span class="mb-2">0934771561</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination position-relative"></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-2 text-center mb-4 mb-lg-0">
+          <div class="bg-white d-inline-block p-2" style="border-radius: 10px">
+            <img src="/assets/abrgroup.png" width="80" height="80" alt="Logo abrgroup" class="w-auto" />
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="p-3 d-flex rounded mb-4 mb-lg-5" style="
+                background: url('/assets/dh-danang.jpg');
+                background-position: -10px;
+                object-fit: cover;
+                object-position: center;
+              ">
+            <img src="/assets/gdth.png" class="w-auto h-auto mr-4" />
+            <div>
+              <h5 class="text-light">Khoa Giáo Dục Tiểu Học</h5>
+              <div class="d-flex mb-2">
+                <img src="/assets/globe.svg" width="24" height="24" class="w-auto mr-2" />
+                <a href="http://gdth.ued.udn.vn" class="text-light">http://gdth.ued.udn.vn</a>
+              </div>
+              <div class="d-flex">
+                <img src="/assets/phone-white.svg" width="24" height="24" class="w-auto mr-2" />
+                <a href="tel:+0236 3841323" class="text-light">0236 3841323 (Line 138)</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-3 d-flex rounded" style="
+                background: url('/assets/dh-danang.jpg');
+                background-position: -10px;
+                object-fit: cover;
+                object-position: center;
+              ">
+            <img src="/assets/ksmt.png" class="w-auto h-auto mr-4" />
+            <div>
+              <h5 class="text-light">Khoa Sinh - Môi Trường</h5>
+              <div class="d-flex mb-2">
+                <img src="/assets/globe.svg" width="24" height="24" class="w-auto mr-2" />
+                <a href="http://gdth.ued.udn.vn/" class="text-light">http://www.bio-env.edu.vn</a>
+              </div>
+              <div class="d-flex">
+                <img src="/assets/phone-white.svg" width="24" height="24" class="w-auto mr-2" />
+                <a href="tel:+0236 3841323" class="text-light">0236 3841323 (Line 126)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="footer-menu text-center text-lg-left mt-4 mt-lg-0 mx-auto">
+
+            <a class="d-block d-lg-inline-block">TRANG CHỦ</a>
+            <a class="d-block d-lg-inline-block">THỐNG KÊ</a>
+            <a class="d-block d-lg-inline-block">COVID LÀ GÌ</a>
+            <a class="d-block d-lg-inline-block">TRIỆU CHỨNG</a>
+            <a class="d-block d-lg-inline-block">ĐIỀU TRỊ</a>
+            <a class="d-block d-lg-inline-block">CÂU CHUYỆN</a>
+          </div>
+          <div class="d-flex justify-content-between mt-3 mx-auto" style="max-width: 130px;">
+            <a class="d-inline-block" href="#"><img src="/assets/facebook.svg" width="26" height="26"/></a>
+            <a class="d-inline-block" href="#"><img src="/assets/youtube.svg" width="26" height="26"/></a>
+            <a class="d-inline-block" href="#"><img src="/assets/linkedin.svg" width="26" height="26"/></a>
+            <a class="d-inline-block" href="#"><img src="/assets/insta.svg" width="26" height="26"/></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 40,
+      // Responsive breakpoints
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 50,
+          slidesPerGroup: 1,
+        },
+        // when window width is >= 767px
+        767: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+          slidesPerGroup: 2,
+        },
+        // when window width is >= 767px
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+          slidesPerGroup: 2,
+        },
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+          slidesPerGroup: 3,
+        },
+      },
+    });
+    const navbar = document.getElementsByTagName('nav')[0]
+    const onScroll = () => {
+      const scroll = document.documentElement.scrollTop
+      if (scroll > 0) {
+        navbar.style.boxShadow = "0 0 15px 0 rgb(119 119 119 / 30%)";
+
+      } else {
+        navbar.style.boxShadow = "0px 0px 0px 0px";
+
+      }
+    }
+    window.addEventListener('scroll', onScroll);
+
+     function goToPackage(id) {
+    const scrollTo = document.getElementById(id).getBoundingClientRect();
+
+  
+      window.scrollTo({
+        top: scrollTo.top + window.pageYOffset - 30,
+        behavior: "smooth",
+      })
+  
+  };
+  </script>
+</body>
+
+</html>
