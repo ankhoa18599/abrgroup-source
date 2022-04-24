@@ -144,8 +144,11 @@ nav {
     }
     .card-microplastics {
       height: 100%;
+
       img {
         margin-bottom: 16px;
+        border-radius: 10px;
+        height: 300px;
       }
       p {
         font-weight: 500;
@@ -253,6 +256,7 @@ footer {
   padding-bottom: 40px;
   img {
     max-width: 80px;
+    height: 100%;
   }
   .footer-menu {
     padding-bottom: 12px;
