@@ -6,7 +6,9 @@
   transition-duration: 300ms;
   scroll-behavior: smooth;
 }
-
+body {
+  overflow-x: hidden;
+}
 a {
   &:hover {
     cursor: pointer;
@@ -22,7 +24,7 @@ h2 {
   font-size: 40px;
   line-height: 56px;
   font-weight: 700;
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     font-size: 32px;
     line-height: 44px;
   }
@@ -32,7 +34,7 @@ section {
   &:last-of-type {
     padding: 100px 0px;
   }
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     padding-top: 40px;
     &:last-of-type {
       padding: 40px 0px;
@@ -45,9 +47,10 @@ nav {
     max-width: 80px;
   }
 
-  .menu {
+  .menu-desktop {
     a,
     span {
+      display: inline-block;
       color: inherit;
       padding: 8px 0px;
       border-bottom: 2px solid transparent;
@@ -57,10 +60,16 @@ nav {
         color: #86da54 !important;
         border-bottom-color: #86da54;
       }
+      @media (max-width: 991px) {
+        padding: 16px 40px;
+        font-weight: 600;
+      }
     }
   }
 }
-
+// .navbar {
+//   box-shadow: rgba(119, 119, 119, 0.3) 0px 0px 15px 0;
+// }
 #banner {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -70,7 +79,7 @@ nav {
     font-size: 32px;
     line-height: 44px;
     color: #386641;
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
       font-weight: 600;
     }
   }
@@ -81,7 +90,7 @@ nav {
     line-height: 64px;
     color: #86da54;
     margin-bottom: 32px;
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
       font-size: 32px;
       line-height: 44px;
     }
@@ -118,7 +127,10 @@ nav {
   }
   .big-image {
     margin-bottom: 100px;
-    @media (max-width: 767px) {
+    max-width: 893px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 991px) {
       margin-bottom: 40px;
     }
   }
@@ -165,7 +177,7 @@ nav {
     color: white;
     padding-top: 80px;
     padding-bottom: 80px;
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
       padding-top: 40px;
       padding-bottom: 40px;
     }
@@ -195,7 +207,7 @@ nav {
     img {
       width: auto;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
       margin-bottom: 24px !important;
       &:last-of-type {
         margin-bottom: 0 !important;
@@ -230,6 +242,9 @@ nav {
     border-radius: 20px;
     text-align: center;
     height: 100%;
+    span {
+      word-break: break-all;
+    }
   }
 }
 footer {
@@ -242,12 +257,16 @@ footer {
   .footer-menu {
     padding-bottom: 12px;
     max-width: 130px;
+    span,
     a {
+      text-transform: uppercase;
       font-weight: 500;
       color: #86da54 !important;
       padding-bottom: 12px;
+      cursor: pointer;
       &:hover {
         color: white !important;
+        text-decoration: none;
       }
       &:last-child {
         padding-bottom: 0;
@@ -291,9 +310,120 @@ footer {
 .swiper-pagination-bullet-active {
   background-color: #386641;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .swiper-button-prev,
   .swiper-button-next {
     display: none;
   }
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #333;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: "";
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: "";
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
+  }
+}
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+  &:focus {
+    outline: none;
+  }
+}
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
 }
